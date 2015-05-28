@@ -2,13 +2,19 @@
 #include "ui_ihm.h"
 
 Ihm::Ihm(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Ihm)
+	QWidget(parent),
+	ui(new Ui::Ihm)
 {
-    ui->setupUi(this);
+	ui->setupUi(this);
+	init();
 }
 
 Ihm::~Ihm()
 {
-    delete ui;
+	delete ui;
+}
+
+void Ihm::init()
+{
+	ui->marioHistory_List->addItem("Bonjour");
 }
