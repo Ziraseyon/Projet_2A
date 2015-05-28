@@ -12,9 +12,9 @@ TARGET = App_projet_2A
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        ihm.cpp
+SOURCES += ./src/main.cpp\
+        ./src/interfaces/ihm.cpp
 
-HEADERS  += ihm.h
+HEADERS  += ./src/interfaces/ihm.h
 
-FORMS    += ihm.ui
+FORMS    += ./src/interfaces/ihm.ui
