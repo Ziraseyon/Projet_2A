@@ -230,9 +230,10 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-release/main.o: src/main.cpp C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+release/main.o: src/main.cpp src/interfaces/ihm.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QWidget \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qwidget.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qwindowdefs.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qglobal.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qconfig.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qfeatures.h \
@@ -261,16 +262,17 @@ release/main.o: src/main.cpp C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QAp
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qglobalstatic.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qmutex.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qnumeric.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobjectdefs.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qnamespace.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobject.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qstring.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qchar.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qbytearray.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qnamespace.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qarraydata.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobject.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobjectdefs_impl.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qlist.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qalgorithms.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qiterator.h \
@@ -281,17 +283,11 @@ release/main.o: src/main.cpp C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QAp
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qcontainerfwd.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qisenum.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qwindowdefs.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qsize.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qcursor.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qmargins.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qpaintdevice.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qrect.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qsize.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qpoint.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qpalette.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qcolor.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qrgb.h \
@@ -319,6 +315,7 @@ release/main.o: src/main.cpp C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QAp
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qfontmetrics.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qfontinfo.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qcursor.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qkeysequence.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qevent.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qvariant.h \
@@ -334,6 +331,11 @@ release/main.o: src/main.cpp C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QAp
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o src\main.cpp

@@ -13,8 +13,15 @@ TEMPLATE = app
 
 
 SOURCES += ./src/main.cpp\
-        ./src/interfaces/ihm.cpp
+		./src/interfaces/ihm.cpp
 
-HEADERS  += ./src/interfaces/ihm.h
+HEADERS  += ./src/interfaces/ihm.h \
+	ui_ihm.h
 
 FORMS    += ./src/interfaces/ihm.ui
+
+OTHER_FILES += \
+	img/c1.png \
+	img/c2.png \
+	img/c3.png \
+	img/c4.png
