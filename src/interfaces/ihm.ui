@@ -19,7 +19,7 @@
      <item>
       <widget class="QTabWidget" name="tabWidget">
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tab_Mario">
         <attribute name="title">
@@ -94,7 +94,7 @@
            <item row="0" column="2">
             <layout class="QVBoxLayout" name="verticalLayout_2">
              <item>
-              <widget class="QLabel" name="marioConnectionLabel">
+              <widget class="QLabel" name="marioLabel_Connection">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -114,14 +114,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_2">
                <item>
-                <widget class="QLabel" name="marioConnectEV3Label">
+                <widget class="QLabel" name="marioEV3Label_Connect">
                  <property name="text">
                   <string>EV3 : </string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="marioMacAdressEV3">
+                <widget class="QLineEdit" name="marioEV3LineEdit_MacAdress">
                  <property name="maxLength">
                   <number>17</number>
                  </property>
@@ -131,7 +131,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="marioConnectEV3Button">
+                <widget class="QPushButton" name="marioEV3Button_Connect">
                  <property name="text">
                   <string>&gt;&gt;</string>
                  </property>
@@ -142,14 +142,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
-                <widget class="QLabel" name="marioConnectNXTLabel">
+                <widget class="QLabel" name="marioNXTLabel_Connect">
                  <property name="text">
                   <string>NXT : </string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="marioMacAdressNXT">
+                <widget class="QLineEdit" name="marioNXTLineEdit_MacAdress">
                  <property name="maxLength">
                   <number>17</number>
                  </property>
@@ -159,7 +159,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="marioConnectNXTButton">
+                <widget class="QPushButton" name="marioNXTButton_Connect">
                  <property name="text">
                   <string>&gt;&gt;</string>
                  </property>
@@ -181,7 +181,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="marioInitialisationLabel">
+              <widget class="QLabel" name="marioLabel_Initialisation">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -200,7 +200,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QLabel" name="marioInitPosLabel">
+                <widget class="QLabel" name="marioLabel_InitPos">
                  <property name="minimumSize">
                   <size>
                    <width>20</width>
@@ -229,7 +229,7 @@
                 </spacer>
                </item>
                <item>
-                <widget class="QComboBox" name="marioInitComboBox">
+                <widget class="QComboBox" name="marioComboBox_Init">
                  <property name="minimumSize">
                   <size>
                    <width>50</width>
@@ -251,7 +251,7 @@
            <item row="2" column="0">
             <layout class="QVBoxLayout" name="verticalLayout_4">
              <item>
-              <widget class="QLabel" name="marioHistoryLabel">
+              <widget class="QLabel" name="marioLabel_History">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -268,7 +268,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QListWidget" name="marioHistory_List">
+              <widget class="QListWidget" name="marioList_History">
                <property name="minimumSize">
                 <size>
                  <width>300</width>
@@ -288,7 +288,7 @@
            <item row="2" column="2">
             <layout class="QVBoxLayout" name="verticalLayout_5">
              <item>
-              <widget class="QLabel" name="marioCommandsLabel">
+              <widget class="QLabel" name="marioLabel_Commands">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -315,7 +315,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="marioCommandsEV3Lbel">
+              <widget class="QLabel" name="marioEV3Label_Commands">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -332,7 +332,7 @@
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_6">
                <item>
-                <widget class="QPushButton" name="marioGoEV3Button">
+                <widget class="QPushButton" name="marioEV3Button_Go">
                  <property name="text">
                   <string>&gt;&gt; GO &lt;&lt;</string>
                  </property>
@@ -341,21 +341,21 @@
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout_5">
                  <item>
-                  <widget class="QPushButton" name="marioParkingAEV3Button">
+                  <widget class="QPushButton" name="marioEV3Button_ParkingA">
                    <property name="text">
                     <string>Parking A</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="marioParkingBEV3Button">
+                  <widget class="QPushButton" name="marioEV3Button_ParkingB">
                    <property name="text">
                     <string>Parking B</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="marioParkingCEV3Button">
+                  <widget class="QPushButton" name="marioEV3Button_ParkingC">
                    <property name="text">
                     <string>Parking C</string>
                    </property>
@@ -364,7 +364,7 @@
                 </layout>
                </item>
                <item>
-                <widget class="QPushButton" name="marioStopEV3Button">
+                <widget class="QPushButton" name="marioEV3Button_Stop">
                  <property name="text">
                   <string>STOP !</string>
                  </property>
@@ -383,7 +383,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="marioCommandsNXTLabel">
+              <widget class="QLabel" name="marioNXTLabel_Commands">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -397,14 +397,14 @@
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="marioGoNXTButton">
+              <widget class="QPushButton" name="marioNXTButton_Go">
                <property name="text">
                 <string>&gt;&gt; GO &lt;&lt;</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="marioStopNXTButton">
+              <widget class="QPushButton" name="marioNXTButton_Stop">
                <property name="text">
                 <string>STOP !</string>
                </property>
@@ -465,7 +465,7 @@
            <item row="2" column="2">
             <layout class="QVBoxLayout" name="verticalLayout_10">
              <item>
-              <widget class="QLabel" name="label_4">
+              <widget class="QLabel" name="fmCommandsLabel">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -508,7 +508,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_9">
+              <widget class="QLabel" name="fmCommandsEV3Label">
                <property name="text">
                 <string>EV3 : </string>
                </property>
@@ -581,7 +581,7 @@
                 </widget>
                </item>
                <item row="2" column="4">
-                <widget class="QPushButton" name="pushButton_10">
+                <widget class="QPushButton" name="fmEV3UTurnLeftButton">
                  <property name="text">
                   <string>U-TURN LEFT</string>
                  </property>
@@ -643,21 +643,21 @@
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_10">
+              <widget class="QLabel" name="fmCommandsNXTLabel">
                <property name="text">
                 <string>NXT : </string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_11">
+              <widget class="QPushButton" name="fmGoNXTButton">
                <property name="text">
                 <string>&gt;&gt; GO &lt;&lt;</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_12">
+              <widget class="QPushButton" name="fmStopNXTButton">
                <property name="text">
                 <string>STOP !</string>
                </property>
@@ -668,7 +668,7 @@
            <item row="0" column="0">
             <layout class="QVBoxLayout" name="verticalLayout_7">
              <item>
-              <widget class="QLabel" name="label">
+              <widget class="QLabel" name="fmDistLabel">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -687,14 +687,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item>
-                <widget class="QLabel" name="label_5">
+                <widget class="QLabel" name="fmDistCloseLabel">
                  <property name="text">
                   <string>Too Close</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QSlider" name="horizontalSlider">
+                <widget class="QSlider" name="fmDistMesureSlider">
                  <property name="minimumSize">
                   <size>
                    <width>300</width>
@@ -733,7 +733,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_6">
+                <widget class="QLabel" name="fmDistFarLabel">
                  <property name="text">
                   <string>Too Far</string>
                  </property>
@@ -746,7 +746,7 @@
            <item row="2" column="0">
             <layout class="QVBoxLayout" name="verticalLayout_9">
              <item>
-              <widget class="QLabel" name="label_3">
+              <widget class="QLabel" name="fmHistoryLabel">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -763,7 +763,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QListWidget" name="listWidget"/>
+              <widget class="QListWidget" name="fmHistoryList"/>
              </item>
             </layout>
            </item>
@@ -816,7 +816,7 @@
            <item row="0" column="2">
             <layout class="QVBoxLayout" name="verticalLayout_8">
              <item>
-              <widget class="QLabel" name="label_2">
+              <widget class="QLabel" name="fmConnectLabel">
                <property name="font">
                 <font>
                  <pointsize>12</pointsize>
@@ -835,14 +835,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_7">
                <item>
-                <widget class="QLabel" name="label_7">
+                <widget class="QLabel" name="fmConnectEV3Label">
                  <property name="text">
                   <string>EV3 : </string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit">
+                <widget class="QLineEdit" name="fmMacAdressEV3">
                  <property name="maxLength">
                   <number>17</number>
                  </property>
@@ -852,7 +852,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton">
+                <widget class="QPushButton" name="fmConnectEV3Button">
                  <property name="text">
                   <string>&gt;&gt;</string>
                  </property>
@@ -863,14 +863,14 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_8">
                <item>
-                <widget class="QLabel" name="label_8">
+                <widget class="QLabel" name="fmConnectNXTLabel">
                  <property name="text">
                   <string>NXT : </string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_2">
+                <widget class="QLineEdit" name="fmMacAdressNXT">
                  <property name="maxLength">
                   <number>17</number>
                  </property>
@@ -880,7 +880,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_2">
+                <widget class="QPushButton" name="fmConnectNXTButton">
                  <property name="text">
                   <string>&gt;&gt;</string>
                  </property>
